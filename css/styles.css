@@ -1,61 +1,86 @@
 html {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 16px;
+    background: repeating-linear-gradient(60deg, #000000, #8576FF, #1C1678);
 }
 
 header>h1 {
     text-align: center;
     font-weight: 900;
-    color: #eeeeee;
+    color: #000000;
     font-size: 3em;
     margin: 0 0 30px 0;
 }
 
 main {
-    background-color: #4f4fe2;
-    margin: 0 auto;
+    background-color: #ffffff;
+    margin: 50px auto;
     border-radius: 40px;
     padding: 50px;
-    max-width: 600px;
+    max-width: 1000px;
+    max-height: 700px;
 }
 
-p, label, h4{
+#use-tutorial {
+    background-color: #8576FF;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+#use-tutorial>p {
+    color: #1C1678;
+}
+
+p, h4{
     text-align: justify;
-    color: #eeeeee;
+    color: #000000;
     line-height:  1.2em;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1.2em;
     margin: 0;
 }
 
-label {
-    display: block;
-}
-
 input {
-    width: 100%;
     box-sizing: border-box;
     height: 40px;
-    margin: 10px auto;
-    border-radius: 20px;
-    padding-left: 20px;
     border: none;
     font-size: 1.1em;
 }
 
 #result-calculation {
-    height: 100px;
+    height: 60%;
+    width: 36vw;
+    max-width: 440px;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    flex: 1;
 }
+
 div>button {
-    border-radius: 5px;
+    border-radius: 20px;
     border: none;
-    width: 5rem;
-    height: 2rem;
+    width: 6rem;
+    height: 2.5rem;
     font-size: 16px;
     font-family: 'Open sans';
-    margin-bottom: 10px;
     background-color: black;
     color: aliceblue;
+
+}
+
+.button-group{
+    display: flex;
+    max-width: 493px;
+    align-content: space-between;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    box-sizing: border-box;
 }
 
 section {
@@ -68,6 +93,12 @@ header>h4 {
     font-size: 1.3em;
 }
 
+.rumus {
+    background-color: #ffffff;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
 #rumus>p {
     margin-bottom: 10px;
 }
@@ -75,4 +106,112 @@ header>h4 {
 span {
     font-style: italic;
     font-size: 1.3em;
+}
+
+#convertion{
+    display: flex;
+    justify-content: space-between;
+}
+
+.celcius, .fahrenheit {
+    width: 100%;
+    height: 100%;
+    max-height: 200px;
+    max-width: 240px;
+    text-align: center;
+}
+
+.celcius {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: #1C1678;
+    color: #8576FF;
+    margin-right: 5px;
+}
+
+.fahrenheit {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #8576FF;
+    color: #1C1678;
+    margin-left: 5px;
+}
+
+.celcius>input, .fahrenheit>input {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    min-height: 65px;
+    max-width: 10vw;
+    margin: 10px 0 30px 0;
+    font-size: 1.7em;
+    text-align: center;
+}
+
+.celcius > label, .fahrenheit > label {
+    display: block; 
+    margin: 20px auto;
+    font-size: 3em;
+    font-weight: 900;
+}
+
+.celcius>input {
+    color: #8576FF;
+}
+
+.fahrenheit>input {
+    color: #1C1678;
+}
+
+.rumus {
+    margin: 20px;
+}
+
+.calculation {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+    
+}
+
+#steps {
+    width: 100%;
+    border-radius: 20px;
+    height: 200px;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: #8576FF;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.steps-calculation>label {
+    box-sizing: border-box;
+    display: block;
+    padding-left: 20px;
+    padding-top: 20px;
+    font-size: 1.2em;
+    font-weight: 800;
+    color: #1C1678;
+}
+
+#steps, #convertion {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+}
+
+footer {
+    text-align: center;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
 }
