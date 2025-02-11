@@ -222,3 +222,7 @@ footer {
     align-items: center;
     font-style: italic;
 }
+
+#rumus-perhitungan>p {
+    margin-bottom: 10px;
+}

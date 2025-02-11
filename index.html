@@ -17,7 +17,7 @@
                 </header>
                 <section>
                     <article id="use-tutorial">
-                        <p>Masukkan suhu derajat Celcius (&deg;C) ke kotak dibawah, lalu klik tombol konversi untuk mendapatkan hasil konversi dalam bentuk Fahrenheit (&deg;F).</p>
+                        <p>Masukkan suhu derajat Celcius (&deg;C) ke kotak dibawah, lalu klik tombol konversi untuk mendapatkan hasil konversi dalam bentuk Fahrenheit (&deg;F) dan klik tombol reverse untuk mendapatkan hasil konversi sebaliknya.</p>
                     </article>
                 </section>
                 <section>
@@ -25,11 +25,11 @@
                         <section id="convertion">
                             <div class="celcius">
                                 <label for="input-celcius">&deg;C</label>
-                                <input id="input-celcius" type="number"/>
+                                <input name="input" id="input-celcius" type="number" step="any"/>
                             </div>
                             <div class="fahrenheit">
                                 <label for="input-fahrenheit">&deg;F</label>
-                                <input id="input-fahrenheit" type="number" readonly/>
+                                <input name="input" id="input-fahrenheit" type="number" step="any"/>
                             </div>
                         </section>
                         <section id="steps">
@@ -42,9 +42,9 @@
                 </section>
                 <section>
                     <div class="button-group">
-                        <button id="konversi">Konversi</button>
+                        <button onclick="convertToFahrenheit(this.innerText)" id="konversi">Konversi</button>
                         <button type="reset">Reset</button>
-                        <button id="reverse">Reverse</button>
+                        <button onclick="convertToCelcius(this.innerText)" id="reverse">Reverse</button>
                     </div> 
                 </section>
             </form>
@@ -53,13 +53,20 @@
                 <header>
                     <h4>Cara Konversi Dari Celcius (&deg;C) ke Fahrenheit (&deg;F)</h4>
                 </header>
-                <article>
+                <article id="rumus-perhitungan">
                     <p>Suhu <span>S</span> dalam derajat Fahrenheit (&deg;F) sama dengan suhu <span>S</span> dalam derajat Celcius (&deg;C) kali 9/5 tambah 32.</p>
                     <p><span>S</span><sub>(&deg;F)</sub> = (<span>S</span><sub>(&deg;C)</sub> &times; 9/5) + 32.</p>
-                    <p>atau</p>
-                    <p><span>S</span><sub>(&deg;F)</sub> = (<span>S</span><sub>(&deg;C)</sub> &times; 1.8) + 32.</p>
                 </article>
                 </div>
+                <div class="rumus">
+                    <header>
+                        <h4>Cara Konversi Dari Fahrenheit (&deg;F) ke Celcius (&deg;C)</h4>
+                    </header>
+                    <article id="rumus-perhitungan">
+                        <p>Suhu <span>S</span> dalam derajat Celcius (&deg;C) sama dengan suhu <span>S</span> dalam derajat Fahrenheit (&deg;F) dikurang 32 lalu dibagi 9/5.</p>
+                        <p><span>S</span><sub>(&deg;C)</sub> = (<span>S</span><sub>(&deg;F)</sub> &times; - 32) / (9/5)</p>
+                    </article>
+                    </div>
             </section>
         </main>
         <footer>mini project RevoU by @andiniansyah</footer>
