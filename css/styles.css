@@ -1,34 +1,40 @@
 html {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 16px;
-    background: repeating-linear-gradient(60deg, #000000, #8576FF, #1C1678);
+    font-size: 15px;
+    background-color: #EFF3EA;
 }
 
 header>h1 {
     text-align: center;
     font-weight: 900;
-    color: #000000;
+    color: #000;
     font-size: 3em;
-    margin: 0 0 30px 0;
+    margin: 0 0 20px 0;
+    background: #fff;
+    border-radius: 10px;
+    border: 5px solid black;
+    padding: 10px;
 }
 
 main {
-    background-color: #ffffff;
-    margin: 50px auto;
-    border-radius: 40px;
+    margin: 0 auto;
+    margin-top: 50px;
+    border-radius: 10px;
     padding: 50px;
-    max-width: 1000px;
-    max-height: 700px;
+    max-width: 1080px;
+    max-height: 720px;
+    border: 10px solid black;
+    box-shadow: -20px -30px 1px #4752ce;
+    background-color: #fff;
 }
 
 #use-tutorial {
-    background-color: #8576FF;
     padding: 15px;
     border-radius: 20px;
 }
 
 #use-tutorial>p {
-    color: #1C1678;
+    color: #000000;
 }
 
 p, h4{
@@ -56,28 +62,48 @@ input {
     padding: 10px;
     box-sizing: border-box;
     margin: 10px;
-    background: rgba(255, 255, 255, 0.2);
+    background: #4752ce;
     border-radius: 20px;
     flex: 1;
-    color: #1C1678;
+    color: #eee;
+    border: 5px solid black;
+    font-size: 1.4em;
 }
 
 div>button {
     border-radius: 20px;
-    border: none;
-    width: 6rem;
-    height: 2.5rem;
+    border: 5px solid black;
+    width: 10vw;
+    height: 5vh;
     font-size: 16px;
     font-family: 'Open sans';
-    background-color: black;
-    color: aliceblue;
     cursor: pointer;
+    font-weight: bold;
 
 }
 
-button:hover {
-    background-color: #8576FF;
-    color: #1C1678;
+#konversi {
+    background-color: #c64efc;
+    color: #eee;
+}
+
+#reverse {
+    background-color: #4752ce;
+    color: #eee;
+}
+
+#reset:hover {
+    background-color: red;
+    color: #eee;
+}
+#konversi:hover {
+    background-color: #4752ce;
+    color: #eee;
+}
+
+#reverse:hover {
+    background-color: #c64efc;
+    color: #eee;
 }
 
 .button-group{
@@ -88,10 +114,11 @@ button:hover {
     align-items: center;
     padding: 0 30px;
     box-sizing: border-box;
+    gap: 10px;
 }
 
 section {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 header>h4 {
@@ -115,7 +142,7 @@ span {
     font-size: 1.3em;
 }
 
-#convertion{
+.convertion{
     display: flex;
     justify-content: space-between;
 }
@@ -126,32 +153,33 @@ span {
     max-height: 200px;
     max-width: 240px;
     text-align: center;
+    border: 5px solid black;
 }
 
 .celcius {
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    background-color: #1C1678;
-    color: #8576FF;
+    background-color: #c64efc;
+    color: #ffffff;
     margin-right: 5px;
 }
 
 .fahrenheit {
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
-    background-color: #8576FF;
-    color: #1C1678;
+    background-color: #4752ce;
+    color: #ffffff;
     margin-left: 5px;
 }
 
 .celcius>input, .fahrenheit>input {
-    background-color: rgba(255, 255, 255, 0.2);
     border-radius: 20px;
     min-height: 65px;
     max-width: 10vw;
     margin: 10px 0 30px 0;
     font-size: 1.7em;
     text-align: center;
+    border: 3px solid black;
 }
 
 .celcius > label, .fahrenheit > label {
@@ -162,11 +190,13 @@ span {
 }
 
 .celcius>input {
-    color: #8576FF;
+    color: #fff;
+    background-color: #4752ce;
 }
 
 .fahrenheit>input {
-    color: #1C1678;
+    color: #fff;
+    background-color: #c64efc;
 }
 
 .rumus {
@@ -183,13 +213,14 @@ span {
     
 }
 
-#steps {
+.steps {
     width: 100%;
     border-radius: 20px;
-    height: 200px;
+    height: 210px;
     box-sizing: border-box;
     overflow: hidden;
-    background-color: #8576FF;
+    background-color: #c64efc;
+    border: 5px solid black;
     flex: 1;
     display: flex;
     justify-content: center;
@@ -203,10 +234,10 @@ span {
     padding-top: 20px;
     font-size: 1.2em;
     font-weight: 800;
-    color: #1C1678;
+    color: black;
 }
 
-#steps, #convertion {
+.steps, .convertion {
     flex: 1;
     display: flex;
     flex-direction: row;
@@ -221,8 +252,14 @@ footer {
     justify-content: center;
     align-items: center;
     font-style: italic;
+    color: #000;
+    margin: 0;
 }
 
 #rumus-perhitungan>p {
     margin-bottom: 10px;
+}
+
+a {
+    color: #000;
 }
