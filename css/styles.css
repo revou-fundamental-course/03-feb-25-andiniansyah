@@ -1,19 +1,7 @@
 html {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 15px;
+    font-size: clamp(10px, 2vw, 16px);
     background-color: #EFF3EA;
-}
-
-header>h1 {
-    text-align: center;
-    font-weight: 900;
-    color: #000;
-    font-size: 3em;
-    margin: 0 0 20px 0;
-    background: #fff;
-    border-radius: 10px;
-    border: 5px solid black;
-    padding: 10px;
 }
 
 main {
@@ -28,13 +16,20 @@ main {
     background-color: #fff;
 }
 
-#use-tutorial {
-    padding: 15px;
-    border-radius: 20px;
+header>h1 {
+    text-align: center;
+    font-weight: 900;
+    color: hsl(0, 0%, 0%);
+    margin: 0 0 20px 0;
+    background: #fff;
+    border-radius: 10px;
+    border: 5px solid black;
+    padding: 10px;
 }
 
-#use-tutorial>p {
-    color: #000000;
+#use-tutorial {
+    padding: 15px;
+    color: #000;
 }
 
 p, h4{
@@ -53,93 +48,8 @@ input {
     font-size: 1.1em;
 }
 
-#result-calculation {
-    height: 60%;
-    width: 36vw;
-    max-width: 440px;
-    white-space: nowrap;
-    overflow: hidden;
-    padding: 10px;
-    box-sizing: border-box;
-    margin: 10px;
-    background: #4752ce;
-    border-radius: 20px;
-    flex: 1;
-    color: #eee;
-    border: 5px solid black;
-    font-size: 1.4em;
-}
-
-div>button {
-    border-radius: 20px;
-    border: 5px solid black;
-    width: 10vw;
-    height: 5vh;
-    font-size: 16px;
-    font-family: 'Open sans';
-    cursor: pointer;
-    font-weight: bold;
-
-}
-
-#konversi {
-    background-color: #c64efc;
-    color: #eee;
-}
-
-#reverse {
-    background-color: #4752ce;
-    color: #eee;
-}
-
-#reset:hover {
-    background-color: red;
-    color: #eee;
-}
-#konversi:hover {
-    background-color: #4752ce;
-    color: #eee;
-}
-
-#reverse:hover {
-    background-color: #c64efc;
-    color: #eee;
-}
-
-.button-group{
-    display: flex;
-    max-width: 493px;
-    align-content: space-between;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 30px;
-    box-sizing: border-box;
-    gap: 10px;
-}
-
 section {
     margin-bottom: 20px;
-}
-
-header>h4 {
-    margin-bottom: 20px;
-    font-weight: 800;
-    font-size: 1.3em;
-}
-
-.rumus {
-    background-color: #ffffff;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-}
-
-#rumus>p {
-    margin-bottom: 10px;
-}
-
-span {
-    font-style: italic;
-    font-size: 1.3em;
 }
 
 .convertion{
@@ -184,7 +94,7 @@ span {
 
 .celcius > label, .fahrenheit > label {
     display: block; 
-    margin: 20px auto;
+    margin: 2vh auto;
     font-size: 3em;
     font-weight: 900;
 }
@@ -199,10 +109,6 @@ span {
     background-color: #c64efc;
 }
 
-.rumus {
-    margin: 20px;
-}
-
 .calculation {
     display: flex;
     justify-content: space-between;
@@ -211,6 +117,23 @@ span {
     gap: 10px;
     margin: 0;
     
+}
+
+#result-calculation {
+    height: 60%;
+    width: 36vw;
+    max-width: 440px;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    background: #4752ce;
+    border-radius: 20px;
+    flex: 1;
+    color: #eee;
+    border: 5px solid black;
+    font-size: 1.4em;
 }
 
 .steps {
@@ -245,6 +168,77 @@ span {
     margin: 0;
 }
 
+div>button {
+    border-radius: 20px;
+    border: 5px solid black;
+    width: 10vw;
+    height: 5vh;
+    font-size: 16px;
+    font-family: 'Open sans';
+    cursor: pointer;
+    font-weight: bold;
+
+}
+
+#konversi {
+    background-color: #c64efc;
+    color: #eee;
+}
+
+#reverse {
+    background-color: #4752ce;
+    color: #eee;
+}
+
+#reset:hover {
+    background-color: red;
+    color: #eee;
+}
+#konversi:hover {
+    background-color: #4752ce;
+    color: #eee;
+}
+
+#reverse:hover {
+    background-color: #c64efc;
+    color: #eee;
+}
+
+.button-group{
+    display: flex;
+    max-width: 50%;
+    align-content: space-between;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    box-sizing: border-box;
+    gap: 10px;
+}
+
+header>h4 {
+    margin-bottom: 20px;
+    font-weight: 800;
+    font-size: 1.3em;
+}
+
+.rumus {
+    margin: 20px;
+    box-sizing: border-box;
+}
+
+#rumus>p {
+    margin-bottom: 10px;
+}
+
+#rumus-perhitungan>p {
+    margin-bottom: 10px;
+}
+
+span {
+    font-style: italic;
+    font-size: 1.3em;
+}
+
 footer {
     text-align: center;
     height: 50px;
@@ -256,10 +250,87 @@ footer {
     margin: 0;
 }
 
-#rumus-perhitungan>p {
-    margin-bottom: 10px;
-}
-
 a {
     color: #000;
+}
+
+@media (max-width: 500px) {
+
+    main {
+        margin: 50px auto;
+        border-radius: 10px;
+        padding: 10px;
+        max-width: 1080px;
+        height: 100%;
+        max-height: 720px;
+        border: 10px solid black;
+        box-shadow: -10px -15px 1px #4752ce;
+        background-color: #fff;
+    }
+    
+    section {
+        margin-bottom: 10px;
+    }
+
+    #use-tutorial {
+        padding: 0 15px;
+    }
+    .calculation {
+        display: block;
+        margin: 0;
+    }
+
+    .celcius > label, .fahrenheit > label {
+        display: block; 
+        margin-top: 2vh;
+        font-size: 2em;
+        font-weight: 900;
+    }
+
+    .celcius>input, .fahrenheit>input {
+        border-radius: 10px;
+        min-height: 10px;
+        width: 100%;
+        max-width: 25vw;
+        margin-top: 0;
+    }
+
+    .convertion {
+        margin-bottom: 10px;
+    }
+
+    #result-calculation {
+        height: 50%;
+        width: 80vw;
+        max-width: 420px;
+        margin-bottom: 0;
+    }
+
+    .steps {
+        height: 140px;
+    }
+
+    div>button {
+        border-radius: 15px;
+        border: 5px solid black;
+        width: 40%;
+        height: 4vh;
+        font-size: 14px;
+    }
+
+    .button-group {
+        max-width: 100%;
+    }
+
+    .rumus {
+        margin: 0 15px;
+    }
+    
+    #rumus-perhitungan>p {
+        margin-bottom: 0;
+    }
+
+    header>h4 {
+        margin: 5px 0;;
+    }
 }
