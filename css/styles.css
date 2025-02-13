@@ -1,7 +1,7 @@
 html {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: clamp(10px, 2vw, 16px);
-    background-color: #EFF3EA;
+    background-color: #5aa9e6;
 }
 
 main {
@@ -12,8 +12,8 @@ main {
     max-width: 1080px;
     max-height: 1080px;
     border: 5px solid black;
-    box-shadow: 0 0 0 3px black, -30px -30px 1px #0D1282;
-    background-color: #F0DE36;
+    box-shadow:  10px 10px 1px black;
+    background-color: #f9f9f9;
 }
 
 header>h1 {
@@ -21,7 +21,7 @@ header>h1 {
     font-weight: 900;
     color: hsl(0, 0%, 0%);
     margin: 0 0 20px 0;
-    background: #EEEDED;
+    background: #ff6392;
     border-radius: 10px;
     border: 5px solid black;
     padding: 10px;
@@ -36,7 +36,6 @@ p, h4{
     text-align: justify;
     color: #000000;
     line-height:  1.2em;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1.2em;
     margin: 0;
 }
@@ -71,16 +70,16 @@ section {
 .celcius {
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    background-color: #D71313;
-    color: #EEEDED;
+    background-color: #7fc8f8;
+    color: black;
     margin-right: 5px;
 }
 
 .fahrenheit {
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
-    background-color: #EEEDED;
-    color: #D71313;
+    background-color: #ffe45e;
+    color: black;
     margin-left: 5px;
 }
 
@@ -103,13 +102,13 @@ section {
 }
 
 .celcius>input {
-    color: #D71313;
-    background-color: #EEEDED;
+    color: black;
+    background-color: #ffe45e;
 }
 
 .fahrenheit>input {
-    color: #EEEDED;
-    background-color: #D71313;
+    color: black;
+    background-color: #7fc8f8;
 }
 
 .calculation {
@@ -131,10 +130,10 @@ section {
     padding: 10px;
     box-sizing: border-box;
     margin: 10px;
-    background: #EEEDED;
+    background: #7fc8f8;
     border-radius: 20px;
     flex: 1;
-    color: #D71313;
+    color: black;
     border: 3px solid black;
     font-size: 1.4em;
 }
@@ -145,7 +144,7 @@ section {
     height: 210px;
     box-sizing: border-box;
     overflow: hidden;
-    background-color: #D71313;
+    background-color: #ffe45e;
     border: 5px solid black;
     flex: 1;
     display: flex;
@@ -160,7 +159,7 @@ section {
     padding-top: 20px;
     font-size: 1.2em;
     font-weight: 800;
-    color: #EEEDED;
+    color: black;
 }
 
 .steps, .convertion {
@@ -182,35 +181,34 @@ div>button {
     font-family: 'Open sans';
     cursor: pointer;
     font-weight: bold;
+    color: black;
 
 }
 
 #konversi {
-    background-color: #D71313;
-    color: #EEEDED;
+    background-color: #7fc8f8;
 }
 
 #reset {
-    background-color: #0D1282;
-    color: #EEEDED;
+    background-color: #ff6392;
 }
+
 #reverse {
-    background-color: #EEEDED;
-    color: #D71313;
+    background-color: #ffe45e;
+
 }
 
 #reset:hover {
-    background-color: red;
-    color: #EEEDED;
+    background-color: #dd1c1a;
+    color: #f9f9f9;
 }
 #konversi:hover {
-    background-color: #EEEDED;
-    color: #D71313;
+    background-color: #ffe45e;
+
 }
 
 #reverse:hover {
-    background-color: #D71313;
-    color: #EEEDED;
+    background-color: #7fc8f8;
 }
 
 .button-group{
@@ -246,6 +244,7 @@ header>h4 {
 span {
     font-style: italic;
     font-size: 1.3em;
+    font-weight: bold;
 }
 
 footer {
@@ -266,13 +265,12 @@ a {
 @media (max-width: 500px) {
 
     main {
-        margin: 50px auto;
+        margin: auto 10px;
         border-radius: 10px;
         padding: 10px;
         max-width: 1080px;
         height: 100%;
         max-height: 720px;
-        box-shadow: -15px -15px 1px #0D1282;
     }
     
     section {
@@ -313,8 +311,7 @@ a {
 
     #result-calculation {
         height: 50%;
-        width: 80vw;
-        max-width: 420px;
+        width: 70vw;
         margin-bottom: 0;
     }
 
@@ -324,7 +321,7 @@ a {
 
     div>button {
         border-radius: 15px;
-        border: 5px solid black;
+        border: 3px solid black;
         width: 40%;
         font-size: 14px;
     }

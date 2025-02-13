@@ -11,10 +11,10 @@ document.getElementById("form-convertion").addEventListener("submit", function (
         console.log(celcius + '°C sudah dikonversi menjadi ' + fahrenheit + '°F');
         document.getElementById("input-fahrenheit").value = fahrenheit.toFixed(1);
         document.getElementById("result-calculation").value = '(' + celcius + '°C' + ' × ' + '9/5) + 32 = ' + fahrenheit.toFixed(1) + '°F'; 
-        resultFieldcelcius.style.backgroundColor = "#D71313";
-        resultFahrenheit.style.color = "#D71313";
-        resultFahrenheit.style.backgroundColor ="#EEEDED";
-        resultHeader.style.color = "#EEEDED";
+        resultFieldcelcius.style.backgroundColor = "#7fc8f8";
+        resultFahrenheit.style.color = "black";
+        resultFahrenheit.style.backgroundColor ="#ffe45e";
+        resultHeader.style.color = "black";
     }     else {
         document.getElementById("input-fahrenheit").value = "";
     }
@@ -31,10 +31,10 @@ document.getElementById("form-convertion").addEventListener("submit", function (
         console.log(fahrenheit + '°C sudah dikonversi menjadi ' + celcius.toFixed(1) + '°F');
         document.getElementById("input-celcius").value = celcius.toFixed(1);
         document.getElementById("result-calculation").value = '(' + fahrenheit + '°F' + ' - 32) ' + '/ (9/5) = ' + celcius.toFixed(1) + '°C'; 
-        resultFieldcelcius.style.backgroundColor = "#EEEDED";
-        resultCelcius.style.color = "#EEEDED";
-        resultCelcius.style.backgroundColor ="#D71313";
-        resultHeader.style.color = "#D71313";
+        resultFieldcelcius.style.backgroundColor = "#ffe45e";
+        resultCelcius.style.color = "black";
+        resultCelcius.style.backgroundColor ="#7fc8f8";
+        resultHeader.style.color = "black";
     }     else {
         document.getElementById("input-fahrenheit").value = "";
     }
