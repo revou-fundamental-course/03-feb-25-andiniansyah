@@ -11,9 +11,9 @@ main {
     padding: 50px;
     max-width: 1080px;
     max-height: 1080px;
-    border: 10px solid black;
-    box-shadow: -20px -30px 1px #4752ce;
-    background-color: #fff;
+    border: 5px solid black;
+    box-shadow: 0 0 0 3px black, -30px -30px 1px #0D1282;
+    background-color: #F0DE36;
 }
 
 header>h1 {
@@ -21,7 +21,7 @@ header>h1 {
     font-weight: 900;
     color: hsl(0, 0%, 0%);
     margin: 0 0 20px 0;
-    background: #fff;
+    background: #EEEDED;
     border-radius: 10px;
     border: 5px solid black;
     padding: 10px;
@@ -71,23 +71,24 @@ section {
 .celcius {
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    background-color: #c64efc;
-    color: #ffffff;
+    background-color: #D71313;
+    color: #EEEDED;
     margin-right: 5px;
 }
 
 .fahrenheit {
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
-    background-color: #4752ce;
-    color: #ffffff;
+    background-color: #EEEDED;
+    color: #D71313;
     margin-left: 5px;
 }
 
 .celcius>input, .fahrenheit>input {
     border-radius: 20px;
     min-height: 65px;
-    max-width: 10vw;
+    width: 100%;
+    max-width: 200px;
     margin: 10px 0 30px 0;
     font-size: 1.7em;
     text-align: center;
@@ -102,13 +103,13 @@ section {
 }
 
 .celcius>input {
-    color: #fff;
-    background-color: #4752ce;
+    color: #D71313;
+    background-color: #EEEDED;
 }
 
 .fahrenheit>input {
-    color: #fff;
-    background-color: #c64efc;
+    color: #EEEDED;
+    background-color: #D71313;
 }
 
 .calculation {
@@ -130,11 +131,11 @@ section {
     padding: 10px;
     box-sizing: border-box;
     margin: 10px;
-    background: #4752ce;
+    background: #EEEDED;
     border-radius: 20px;
     flex: 1;
-    color: #eee;
-    border: 5px solid black;
+    color: #D71313;
+    border: 3px solid black;
     font-size: 1.4em;
 }
 
@@ -144,7 +145,7 @@ section {
     height: 210px;
     box-sizing: border-box;
     overflow: hidden;
-    background-color: #c64efc;
+    background-color: #D71313;
     border: 5px solid black;
     flex: 1;
     display: flex;
@@ -159,7 +160,7 @@ section {
     padding-top: 20px;
     font-size: 1.2em;
     font-weight: 800;
-    color: black;
+    color: #EEEDED;
 }
 
 .steps, .convertion {
@@ -185,27 +186,31 @@ div>button {
 }
 
 #konversi {
-    background-color: #c64efc;
-    color: #eee;
+    background-color: #D71313;
+    color: #EEEDED;
 }
 
+#reset {
+    background-color: #0D1282;
+    color: #EEEDED;
+}
 #reverse {
-    background-color: #4752ce;
-    color: #eee;
+    background-color: #EEEDED;
+    color: #D71313;
 }
 
 #reset:hover {
     background-color: red;
-    color: #eee;
+    color: #EEEDED;
 }
 #konversi:hover {
-    background-color: #4752ce;
-    color: #eee;
+    background-color: #EEEDED;
+    color: #D71313;
 }
 
 #reverse:hover {
-    background-color: #c64efc;
-    color: #eee;
+    background-color: #D71313;
+    color: #EEEDED;
 }
 
 .button-group{
@@ -267,9 +272,7 @@ a {
         max-width: 1080px;
         height: 100%;
         max-height: 720px;
-        border: 10px solid black;
-        box-shadow: -10px -15px 1px #4752ce;
-        background-color: #fff;
+        box-shadow: -15px -15px 1px #0D1282;
     }
     
     section {
@@ -300,7 +303,7 @@ a {
         border-radius: 10px;
         min-height: 10px;
         width: 100%;
-        max-width: 25vw;
+        max-width: 20vw;
         margin-top: 0;
     }
 
