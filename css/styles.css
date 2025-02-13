@@ -1,3 +1,4 @@
+
 html {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: clamp(10px, 2vw, 16px);
@@ -18,10 +19,11 @@ main {
     border-radius: 10px;
     padding: 50px;
     max-width: 1080px;
-    max-height: 1080px;
+    max-height: 1920px;
     border: 5px solid black;
     box-shadow:  10px 10px 1px black;
     background-color: #f9f9f9;
+    width: 70%;
 }
 
 header>h1 {
@@ -126,18 +128,18 @@ section {
     align-items: center;
     gap: 10px;
     margin: 0;
+    width: 100%;
     
 }
 
 #result-calculation {
     height: 60%;
-    width: 36vw;
-    max-width: 440px;
+    max-width: 100%;
     white-space: nowrap;
     overflow: hidden;
     padding: 10px;
     box-sizing: border-box;
-    margin: 10px;
+    margin: 10px 25px 25px 25px;
     background: #7fc8f8;
     border-radius: 20px;
     flex: 1;
@@ -158,13 +160,14 @@ section {
     display: flex;
     justify-content: center;
     align-items: stretch;
+    flex-direction: column;
 }
 
-.steps-calculation>label {
+.steps>label {
     box-sizing: border-box;
     display: block;
-    padding-left: 20px;
-    padding-top: 20px;
+    padding-left: 25px;
+    padding-top: 25px;
     font-size: 1.2em;
     font-weight: 800;
     color: black;
@@ -173,8 +176,8 @@ section {
 .steps, .convertion {
     flex: 1;
     display: flex;
-    flex-direction: row;
     justify-content: center;
+    align-content: center;
     margin: 0;
 }
 
@@ -273,12 +276,13 @@ a {
 @media (max-width: 500px) {
 
     main {
-        margin: auto 10px;
+        margin: auto;
         border-radius: 10px;
         padding: 10px;
         max-width: 1080px;
         height: 100%;
         max-height: 720px;
+        width: 80%;
 
     }
     
@@ -320,8 +324,7 @@ a {
 
     #result-calculation {
         height: 50%;
-        width: 70vw;
-        margin-bottom: 0;
+        max-width: 100%;
     }
 
     .steps {
